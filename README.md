@@ -34,6 +34,6 @@ touch escape to get out of the program. The keys + or - will help you accelerate
 
 ### Example:
 $> ./corewar_visu vm-champs-os/champs/Octobre_Rouge_V4.2.cor vm-champs-os/champs/Gagnant.cor
-![](output/screenshot_visu/Screenshot_octobre_rouge_vs_gagnant.png)
+![](screenshot_visu/Screenshot_octobre_rouge_vs_gagnant.png)
 
 Obtained mark for this project : 125/100
