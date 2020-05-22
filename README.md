@@ -24,12 +24,14 @@ If the <.s> file is valid, a <.cor> output will be created to be used for the co
 It’s the “arena” in which your champions will be executed.
 It offers various functions, all of which will be useful for the battle of the champions
 #### Usage
-```make```then ```./corewar <file.cor>```
+```make``` then ```./corewar <file.cor>```
 
 ## A bonus: The visual:
 #### Usage:
 ```bash sdl_linux.sh``` (if you are on linux) OR ```bash sdl_macos.sh``` (if you are on mac os)
-```make corewar_visu```then ```./corewar_visu <file.cor>```
+
+then ```make corewar_visu``` and ```./corewar_visu <file.cor>```
+
 touch escape to get out of the program. The keys + or - will help you accelerate or decrease the speed of the program. You can touch the "space" key to pause the game
 
 ### Example:
