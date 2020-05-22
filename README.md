@@ -16,43 +16,26 @@ reported to be “alive”.
 ### The assembler:
 this is the program that will compile your champions and translate them from the language you will write them in (assembly language) into “Bytecode”.Bytecode is a machine code, which will be directly interpreted by the virtual
 machine.
-### Usage
-```make```then ```./asm <file.s>``
+#### Usage
+```make``` then ```./asm <file.s>```
 If the <.s> file is valid, a <.cor> output will be created to be used for the corewar program
 
 ### The virtual machine:
 It’s the “arena” in which your champions will be executed.
 It offers various functions, all of which will be useful for the battle of the champions
-### Usage
-```make```then ```./corewar <file.cor>``
+#### Usage
+```make``` then ```./corewar <file.cor>```
 
 ## A bonus: The visual:
-### Usage:
+#### Usage:
 ```bash sdl_linux.sh``` (if you are on linux) OR ```bash sdl_macos.sh``` (if you are on mac os)
-```make corewar_visu```then ```./corewar_visu <file.cor>
+
+then ```make corewar_visu``` and ```./corewar_visu <file.cor>```
+
 touch escape to get out of the program. The keys + or - will help you accelerate or decrease the speed of the program. You can touch the "space" key to pause the game
 
 ### Example:
-Here is an example of a valid file:
-$> cat tests/asm_valid/zork.s
+$> ./corewar_visu vm-champs-os/champs/Octobre_Rouge_V4.2.cor vm-champs-os/champs/Gagnant.cor
+![](screenshot_visu/Screenshot_octobre_rouge_vs_gagnant.png)
 
-```
-.name "zork"
-.comment "I'M ALIIIIVE"
-
-l2:		sti r1, %:live, %1
-		and r1, %0, r1
-
-live:	live %1
-		zjmp %:live
-```
-output:
-![](output/image1.png)
-
-other example with a map of Europe:
-
-![](output/image2.png)
-
-![](output/image3.png)
-
-Obtained mark for this project : 125/100# Corewar
+Obtained mark for this project : 125/100
